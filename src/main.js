@@ -1,22 +1,22 @@
-import 'styles/app.scss';
 import React from 'react';
 import { AppContainer } from 'react-hot-loader';
 import ReactDOM from 'react-dom';
 import {
-    BrowserRouter as Router,
     Route,
     Switch,
     HashRouter
 } from 'react-router-dom';
 
-import App from './components/App/App.jsx';
-import Layout from './components/Layout/Layout.jsx';
+import App from './components/App';
+import Pokemon from './components/pokemon';
+import PokemonSpecific from './Components/pokemon-specific';
 
 const routes = (
     <HashRouter>
         <Switch>
             <App>
-                <Route path="/" exact component={Layout} />
+                <Route path="/" exact component={Pokemon} />
+                <Route path="/pokemon-specific/:id" component={PokemonSpecific} />
             </App>
         </Switch>
     </HashRouter>
