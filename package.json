@@ -35,7 +35,7 @@
     "type": "git",
     "url": "git://github.com/GraffN/Noroff-JSFResitt.git"
   },
-  "author": "Cameron Moodley",
+  "author": "Jørgen Graff",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
