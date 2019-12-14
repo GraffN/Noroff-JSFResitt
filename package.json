@@ -33,7 +33,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/YOUR_USERNAME/PROJECT_NAME.git"
+    "url": "git://github.com/GraffN/Noroff-JSFResitt.git"
   },
   "author": "Cameron Moodley",
   "license": "MIT",
