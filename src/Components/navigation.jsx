@@ -8,6 +8,7 @@ function Navigation() {
     <div>
     <div className='[ navigation ]'>
         <div className='[  ][ navigation__top ]'>
+          <h1 className='navigation__title'>Pokedex</h1>
         </div>
         
         <div className='[  ][ navigation__bot ]'>

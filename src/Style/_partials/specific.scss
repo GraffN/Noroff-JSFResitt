@@ -1,0 +1,39 @@
+.specific{
+    padding-top: 100px;
+    &__container{
+        width: 100%;
+        background-color: rgb(187, 184, 184);
+        padding: 10px;
+        @media screen and (min-width:620px) {
+            display: flex;
+              
+        }
+        @media screen and (min-width:1024px) {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1000px;
+              
+        }
+    }
+    &__image{
+        text-align: center;
+        background-color: rgb(35, 114, 233);
+        padding: 30px;
+        @media screen and (min-width:620px) {
+            width: 50%;
+              
+        }
+        &--size{
+
+        }
+    }
+    &__info{
+        background-color: rgb(209, 209, 209);
+        padding: 10px;
+        margin: 10px;
+        @media screen and (min-width:620px) {
+            width: 50%;
+              
+        }
+    }
+}

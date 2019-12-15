@@ -38,8 +38,7 @@ export default class PokemonSpecific extends React.Component{
                             ></PokemonSpecificComponent>
         return(
             <div>
-                <h1>hello</h1>
-                <div>{specificCard}</div>
+                <div className='specific'>{specificCard}</div>
             </div>
         )
     }

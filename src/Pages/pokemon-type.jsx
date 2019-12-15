@@ -85,7 +85,7 @@ export default class PokemonType extends React.Component{
 
 
                 
-                <div>
+                <div className='pokemon__search'>
                     <Search onSearchTerm={app.handleSearchTerm}></Search>
                 </div>
                 <div className='pokemon__wrapper'>{app.state.pokemonCards}</div>
