@@ -15,7 +15,7 @@ export default class Search extends React.Component{
 
         return(
             <div>
-                <input type="text" ref='searchTerm' onChange={app.handlePokemonSearchTerm} placeholder='Search pokemon name...'/>
+                <input className='pokemon__search--input' type="text" ref='searchTerm' onChange={app.handlePokemonSearchTerm} placeholder='Search pokemon name...'/>
             </div>
         )
     }

@@ -11,7 +11,7 @@ export default class PokemonComponent extends React.Component {
                     </div>
                     <div className='pokemon__info'>
                         <p className='pokemon__name'>{this.props.name}</p>
-                        <div className='pokemon__more'>>></div>
+                        <div className='pokemon__more'><p>>></p></div>
                     </div>
                 
                 </a>

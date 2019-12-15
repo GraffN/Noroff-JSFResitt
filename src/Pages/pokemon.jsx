@@ -80,38 +80,41 @@ export default class Pokemon extends React.Component{
 
             
             <div className='pokemon'>
+                <div className='pokemon__search'>
+                    <Search onSearchTerm={app.handleSearchTerm}></Search>
+                </div>
                 <div className='selection'>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ]'>
                         <a href={'/'}>Return</a>
                     </div>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ][ selection__type--fire ]'>
                         <a href={'#/pokemon-type/fire'}>Fire</a>
                     </div>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ][ selection__type--water ]'>
                         <a href={'#/pokemon-type/water'}>Water</a>
                     </div>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ][ selection__type--fighting ]'>
                         <a href={'#/pokemon-type/fighting'}>Fight</a>
                     </div>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ][ selection__type--psychic ]'>
                         <a href={'#/pokemon-type/Psychic'}>Psychic</a>
                     </div>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ][ selection__type--grass ]'>
                         <a href={'#/pokemon-type/Grass'}>Grass</a>
                     </div>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ][ selection__type--lightning ]'>
                         <a href={'#/pokemon-type/Lightning'}>Lightning</a>
                     </div>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ][ selection__type--colourless ]'>
                         <a href={'#/pokemon-type/Colorless'}>Colorless</a>
                     </div>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ][ selection__type--dragon ]'>
                         <a href={'#/pokemon-type/Dragon'}>Dragon</a>
                     </div>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ][ selection__type--fairy ]'>
                         <a href={'#/pokemon-type/Fairy'}>Fairy</a>
                     </div>
-                    <div className='selection__type'>
+                    <div className='[ selection__type ][ selection__type--metal ]'>
                         <a href={'#/pokemon-type/Metal'}>Metal</a>
                     </div>  
                 </div>
@@ -119,9 +122,7 @@ export default class Pokemon extends React.Component{
 
 
                 
-                <div>
-                    <Search onSearchTerm={app.handleSearchTerm}></Search>
-                </div>
+                
                 <div className='pokemon__wrapper'>{app.state.pokemonCards}</div>
                 
             </div>
