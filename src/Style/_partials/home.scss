@@ -1,0 +1,30 @@
+.pokemon{
+    width: 40%;
+    display: block;
+    background-color: red;
+    padding: 20px;
+    &__wrapper{
+        background-color: grey;
+        padding: 10px;
+        text-align: center;
+    }
+    &__container{
+        height: 100px;
+        background-color:darkgrey;
+        display: inline-flex;
+        width: 30%;
+        margin: 5px;
+    }
+    &__image{
+        padding: 10px;
+        display: inline-block;
+        &--size{
+            width: 50px;
+            height: 80px;
+        }
+    }
+    &__info{
+        display: inline-flex;
+    }
+
+}

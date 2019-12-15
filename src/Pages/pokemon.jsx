@@ -1,5 +1,5 @@
 import React from 'react';
-import PokemonComponent from './pokemon-component'
+import PokemonComponent from '../Components/pokemon-component'
 
 export default class Pokemon extends React.Component{
     constructor(props){
@@ -50,9 +50,9 @@ export default class Pokemon extends React.Component{
         return(
             console.log(this.state.pokemonObject),
 
-            <div>
+            <div className='pokemon'>
                 <p>This is all the cards</p>
-                <div>{app.state.pokemonCards}</div>
+                <div className='pokemon__wrapper'>{app.state.pokemonCards}</div>
             </div>            
         )
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import PokemonSpecificComponent from './pokemon-specific-component';
+import PokemonSpecificComponent from '../Components/pokemon-specific-component';
 
 export default class PokemonSpecific extends React.Component{
     constructor(props){

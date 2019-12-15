@@ -6,12 +6,12 @@ export default class PokemonComponent extends React.Component {
         return(
             <div className='pokemon__container'>
                 <a href={'#/pokemon-specific/'+this.props.id}>
-                    <div>
-                        <img src={this.props.imageUrl} className='pokemon__image'  alt={this.props.name}></img>
+                    <div className='pokemon__image'>
+                        <img src={this.props.imageUrl} className='pokemon__image--size'   alt={this.props.name}></img>
                     </div>
-                    <div>
+                    <div className='pokemon__info'>
                         <p className='pokemon__name'>{this.props.name}</p>
-                        <div className='pokemon__info'>>></div>
+                        <div className='pokemon__more'>>></div>
                     </div>
                 
                 </a>

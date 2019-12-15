@@ -8,8 +8,8 @@ import {
 } from 'react-router-dom';
 
 import App from './components/App';
-import Pokemon from './components/pokemon';
-import PokemonSpecific from './Components/pokemon-specific';
+import Pokemon from './Pages/pokemon';
+import PokemonSpecific from './Pages/pokemon-specific';
 
 const routes = (
     <HashRouter>
