@@ -1,5 +1,5 @@
 .pokemon{
-    width: 50%;
+    width: 100%;
     display: block;
     background-color: red;
     padding: 20px;
@@ -28,4 +28,22 @@
     
     }
 
+}
+.selection{
+    padding-top: 50px;
+    width: 100%;
+    height: 50vh;
+    display: block;
+    text-align: center;
+    &__type{
+        text-align: center;
+        width: 40%;
+        display: inline-flex;
+        background-color: blue;
+        text-decoration-color: red;
+        border: 1px solid lightblue;
+        border-radius: 4px;
+        margin: 3px;
+
+    }
 }

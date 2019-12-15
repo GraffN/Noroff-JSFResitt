@@ -80,27 +80,41 @@ export default class Pokemon extends React.Component{
 
             
             <div className='pokemon'>
-                <div>
-                    <a href={'/'}>Return</a>
-                    <a href={'#/pokemon-type/fire'}>Fire</a>
-                    <a href={'#/pokemon-type/water'}>Water</a>
-                    <a href={'#/pokemon-type/fighting'}>Fight</a>
-                    <a href={'#/pokemon-type/Psychic'}>Psychic</a>
-                    <a href={'#/pokemon-type/Grass'}>Grass</a>
-                    <a href={'#/pokemon-type/Lightning'}>Lightning</a>
-                    <a href={'#/pokemon-type/Colorless'}>Colorless</a>
-                    <a href={'#/pokemon-type/Dragon'}>Dragon</a>
-                    <a href={'#/pokemon-type/Fairy'}>Fairy</a>
-                    <a href={'#/pokemon-type/Metal'}>Metal</a>
-
-
-
-
-
-
-
-
+                <div className='selection'>
+                    <div className='selection__type'>
+                        <a href={'/'}>Return</a>
                     </div>
+                    <div className='selection__type'>
+                        <a href={'#/pokemon-type/fire'}>Fire</a>
+                    </div>
+                    <div className='selection__type'>
+                        <a href={'#/pokemon-type/water'}>Water</a>
+                    </div>
+                    <div className='selection__type'>
+                        <a href={'#/pokemon-type/fighting'}>Fight</a>
+                    </div>
+                    <div className='selection__type'>
+                        <a href={'#/pokemon-type/Psychic'}>Psychic</a>
+                    </div>
+                    <div className='selection__type'>
+                        <a href={'#/pokemon-type/Grass'}>Grass</a>
+                    </div>
+                    <div className='selection__type'>
+                        <a href={'#/pokemon-type/Lightning'}>Lightning</a>
+                    </div>
+                    <div className='selection__type'>
+                        <a href={'#/pokemon-type/Colorless'}>Colorless</a>
+                    </div>
+                    <div className='selection__type'>
+                        <a href={'#/pokemon-type/Dragon'}>Dragon</a>
+                    </div>
+                    <div className='selection__type'>
+                        <a href={'#/pokemon-type/Fairy'}>Fairy</a>
+                    </div>
+                    <div className='selection__type'>
+                        <a href={'#/pokemon-type/Metal'}>Metal</a>
+                    </div>  
+                </div>
                 
 
 

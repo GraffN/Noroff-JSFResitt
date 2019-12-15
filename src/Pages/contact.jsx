@@ -83,39 +83,33 @@ class Contact extends React.Component {
       		)
     		}else{
       			return(
-					<form onSubmit={this.handleSubmit}>
+					<form className='form' onSubmit={this.handleSubmit}>
 						<div>
-							<div>
-								<label>Username:</label>
+							<div className='form__inputWrap'>
+								<label className='form__label'>Username:</label>
 									<input 
+									className='form__input'
 									type='text'
 									value={this.state.username}
 									onChange={this.usernameChange}
 								/>
-								<div style={{color: "red"}}>{this.state.usernameError}</div>
+								<div className='form__error'>{this.state.usernameError}</div>
 							</div>
-							<div>
-								<label>Phone:</label>
+							<div className='form__inputWrap'>
+								<label className='form__label'>Phone:</label>
 									<input 
+									className='form__input'
 									type='text'
 									value={this.state.phone}
 									onChange={this.phoneChange}
 								/>
-								<div style={{color: "red"}}>{this.state.phoneError}</div>
+								<div className='form__error'>{this.state.phoneError}</div>
 
 							</div>
-							<div>
-								<label>Message:</label>
-								<textarea 
-									value={this.state.message}
-									onChange={this.messageChange} 
-								/>
-								<div style={{color: "red"}}>{this.state.messageError}</div>
-
-							</div>
-							<div>
-								<label>Topic:</label>
+							<div className='form__inputWrap'>
+								<label className='form__label'>Topic:</label>
 								<select 
+									className='form__input'
 									value={this.state.topic}
 									onChange={this.topicChange}
 									>
@@ -126,7 +120,19 @@ class Contact extends React.Component {
 					
 								</select>
 							</div>
-							<button type='submit'>Submit</button>
+							<div className='form__inputWrap'>
+								<label className='form__label'>Message:</label>
+								<textarea
+									className='form__input' 
+									value={this.state.message}
+									onChange={this.messageChange} 
+								/>
+								<div className='[ form__error--message ][ form__error ]'>{this.state.messageError}</div>
+
+							</div>
+							<div className='form__inputWrap'>
+								<button className='form__submit' type='submit'>Submit</button>
+							</div>
 						
 					</div>
 				</form>
