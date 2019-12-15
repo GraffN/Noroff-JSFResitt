@@ -31,7 +31,7 @@ export default class PokemonSpecific extends React.Component{
         let specificCard = <PokemonSpecificComponent 
                                 imageUrl = {app.state.pokemonObject.imageUrl}
                                 name = {app.state.pokemonObject.name}
-                                type = {app.state.pokemonObject.type}
+                                type = {app.state.pokemonObject.types}
                                 hp = {app.state.pokemonObject.hp}
                                 rarity = {app.state.pokemonObject.rarity}
                                 

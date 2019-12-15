@@ -1,17 +1,25 @@
 import React from 'react';
-import Navigation from '../Components/navigation';
+import ReactDOM from 'react-dom';
 
-
-
-
-function Contact() {
-  return (
-    <>
-        <Navigation />
-        <h2>contact</h2>
-    </>
-    
-  );
+class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { username: '' };
+  }
+  myChangeHandler = (event) => {
+    this.setState({username: event.target.value});
+  }
+  render() {
+    return (
+      <form>
+      <h1>Hello {this.state.username}</h1>
+      <p>Enter your name:</p>
+      <input
+        type='text'
+        onChange={this.myChangeHandler}
+      />
+      </form>
+    );
+  }
 }
-
-export default Contact;
+ReactDOM.render(<Contact />, document.getElementById('../contact.html/root'));

@@ -10,13 +10,17 @@ import {
 import App from './components/App';
 import Pokemon from './Pages/pokemon';
 import PokemonSpecific from './Pages/pokemon-specific';
+import PokemonType from './Pages/pokemon-type';
+import Contact from './Pages/contact';
 
 const routes = (
     <HashRouter>
         <Switch>
             <App>
-                <Route path="/" exact component={Pokemon} />
-                <Route path="/pokemon-specific/:id" component={PokemonSpecific} />
+                <Route path='/' exact component={Pokemon} />
+                <Route path='/contact' component={Contact}/>
+                <Route path='/pokemon-specific/:id' component={PokemonSpecific} />
+                <Route path='/pokemon-type/:type' component={PokemonType}/>
             </App>
         </Switch>
     </HashRouter>

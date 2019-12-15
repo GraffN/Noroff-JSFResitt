@@ -1,40 +1,40 @@
 import React from 'react';
-import PokemonComponent from '../Components/pokemon-component'
+import PokemonComponent from '../Components/pokemon-component';
 import Search from '../Components/search';
 
-export default class Pokemon extends React.Component{
+
+export default class PokemonType extends React.Component{
     constructor(props){
         super(props);
-        this.state = {
-            pokemonObject: [],
-            pokemonCards: [],
-            pokemonFiltered: []
+        this.state ={
+            pokemonObject:[],
+            pokemonCards:[],
+            pokemonFiltered:[],
+            pokemonType: this.props.match.params.type
         }
     this.getData = this.getData.bind(this);
-    this.handleSearchTerm = this.handleSearchTerm.bind(this);        
+    this.handleSearchTerm = this.handleSearchTerm.bind(this);
+
     }
-
-
     componentDidMount(){
         const app = this;
-        app.getData()
+        app.getData();
     }
     getData(){
         const app = this;
-        fetch('https://api.pokemontcg.io/v1/cards?setCode=base1')
-        .then(response => {
+        fetch('https://api.pokemontcg.io/v1/cards?types='+ app.state.pokemonType)
+        .then( response => {
             return response.json()
-
         })
+        
         .then(result => {
             app.setState({
                 pokemonObject: result.cards,
                 pokemonFiltered: result.cards
-                
-            });
-        })
+            })
+            console.log(app.state.pokemonObject, 'result')
+        });
     }
-    
     handleSearchTerm(searchTerm){
         const app = this;
         console.log(app.state.pokemonObject, 'search');
@@ -50,9 +50,6 @@ export default class Pokemon extends React.Component{
             pokemonFiltered: searched,
         }, app.createCards()); 
     }
-    
-    
-    
     createCards(){
         const app = this;
         let pokemonArray = app.state.pokemonFiltered;
@@ -74,6 +71,7 @@ export default class Pokemon extends React.Component{
         const app = this;
         app.createCards()
         return(
+            console.log(this.state.pokemonFiltered, "should reset array"),
             console.log(this.state.pokemonCards, 'pokemonCards'),
             console.log(this.state.pokemonObject, 'pokemonObject'),
             console.log(this.state.pokemonFiltered, 'pokemonFiltered'),
@@ -82,24 +80,6 @@ export default class Pokemon extends React.Component{
             <div className='pokemon'>
                 <div>
                     <a href={'/'}>Return</a>
-                    <a href={'#/pokemon-type/fire'}>Fire</a>
-                    <a href={'#/pokemon-type/water'}>Water</a>
-                    <a href={'#/pokemon-type/fighting'}>Fight</a>
-                    <a href={'#/pokemon-type/Psychic'}>Psychic</a>
-                    <a href={'#/pokemon-type/Grass'}>Grass</a>
-                    <a href={'#/pokemon-type/Lightning'}>Lightning</a>
-                    <a href={'#/pokemon-type/Colorless'}>Colorless</a>
-                    <a href={'#/pokemon-type/Dragon'}>Dragon</a>
-                    <a href={'#/pokemon-type/Fairy'}>Fairy</a>
-                    <a href={'#/pokemon-type/Metal'}>Metal</a>
-
-
-
-
-
-
-
-
                     </div>
                 
 
