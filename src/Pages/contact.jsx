@@ -79,7 +79,9 @@ class Contact extends React.Component {
     	if(this.state.hideForm == true){
       		return(
 				console.log(this.state.hideForm, 'render hide form'),
-				<p>Thanks for your message!</p>
+				<div className='form__submitmessage'>
+					<p>Thanks for your message!</p>
+				</div>
       		)
     		}else{
       			return(

@@ -78,9 +78,9 @@ export default class PokemonType extends React.Component{
 
             
             <div className='pokemon'>
-                <div>
-                    <a href={'/'}>Return</a>
-                    </div>
+                <div className='pokemon__returnbtn'>
+                    <a href={'/'}>Return to home</a>
+                </div>
                 
 
 
